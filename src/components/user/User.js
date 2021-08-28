@@ -1,10 +1,11 @@
 import {useEffect, useState} from "react";
 import {getPostOfUser} from "../../services/user.axios.service";
 import Posts from "../posts/Posts";
-import Adress from "../adress/Adress";
+import Address from "../adress/Adress";
+
 
 export default function User({item: userItem}) {
-    let {adress} = userItem;
+    let {address} = userItem;
 
   let [posts, setPosts] = useState([]);
 
@@ -15,7 +16,7 @@ export default function User({item: userItem}) {
   return (
       <div>
           <h2>{userItem.id} {userItem.name}</h2>
-          <Adress adress={adress}/>
+          <Address address={address}/>
           <Posts items={posts}/>
       </div>
   );

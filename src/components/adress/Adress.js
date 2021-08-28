@@ -1,4 +1,4 @@
-export default function Adress({adress: {city, street}}) {
+export default function Address({address: {city, street}}) {
   return (
     <div>
     City - {city}, street - {street}
