@@ -1,0 +1,15 @@
+.wrap{
+    display: flex;
+}
+
+.wrap > div{
+    width: 50%;
+}
+
+.user-box{
+    background: silver;
+}
+
+.chosen-one{
+    background: cornsilk;
+}
